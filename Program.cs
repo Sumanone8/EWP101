@@ -15,7 +15,6 @@ namespace PracticeSheet
             PracticeClass practice = new PracticeClass();
             practice.DoPractice();
 
-            Console.WriteLine("Practice session complete. Goodbye!");
             Console.ReadLine();
         }
     }
