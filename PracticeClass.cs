@@ -10,14 +10,22 @@ namespace PracticeSheet
 
             // Generate a random number to determine whether the employee is present or absent
             Random random = new Random();
-            bool isPresent = random.Next(0, 2) == 0;
+            int attendance = random.Next(0, 3);
 
-            if (isPresent)
+            if (attendance == 1)
             {
                 int fullTimeWorkHours = 8;
                 int hourlyPayRate = 20;
                 int dailyWage = fullTimeWorkHours * hourlyPayRate;
                 Console.WriteLine("Employee is present.");
+                Console.WriteLine("Daily wage: $" + dailyWage);
+            }
+            else if (attendance == 2)
+            {
+                int PartTimeWorkHours = 4;
+                int hourlyPayRate = 20;
+                int dailyWage = PartTimeWorkHours * hourlyPayRate;
+                Console.WriteLine("Employee is present part-time.");
                 Console.WriteLine("Daily wage: $" + dailyWage);
             }
             else
