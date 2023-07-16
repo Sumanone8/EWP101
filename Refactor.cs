@@ -1,16 +1,18 @@
 ﻿using System;
+
 namespace PracticeSheet
 {
-    class PracticeClass
+    class EmployeeWageCalculator
     {
-        public void DoPractice()
+        // Class variables
+        private const int workingDaysPerMonth = 20;
+        private const int totalWorkingHours = 100;
+        private const int hourlyPayRate = 20;
+
+        // Class method to compute employee wage
+        public static void ComputeEmployeeWage()
         {
             Console.WriteLine("Welcome to the Employee Wage Calculator!");
-
-            // Constants for the number of working days in a month, total working hours, and the hourly pay rate
-            const int workingDaysPerMonth = 20;
-            const int totalWorkingHours = 100;
-            const int hourlyPayRate = 20;
 
             // Variables to store the total wage, total working hours, and the daily wage
             int totalWage = 0;
@@ -28,7 +30,8 @@ namespace PracticeSheet
                 switch (workType)
                 {
                     case 0: // Full-time
-                        workHours = 8; break;
+                        workHours = 8;
+                        break;
 
                     case 1: // Part-time
                         workHours = 4;
