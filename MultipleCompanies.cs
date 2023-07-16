@@ -2,19 +2,13 @@
 
 namespace PracticeSheet
 {
-    class EmployeeWageCalculator1
+    class EmployeeWageCalculator2
     {
-        // Class variables
-        private const int workingDaysPerMonth = 20;
-        private const int totalWorkingHours = 100;
-        private const int hourlyPayRate = 20;
-
-        // Class method to compute employee wage
-        public static void ComputeEmployeeWage1()
+        // Class method to compute employee wage for a company
+        public static void ComputeEmployeeWage2(string companyName, int workingDaysPerMonth, int totalWorkingHours, int hourlyPayRate)
         {
-            Console.WriteLine("Welcome to the Employee Wage Calculator!");
+            Console.WriteLine($"Welcome to {companyName} Employee Wage Calculator!");
 
-            // Variables to store the total wage, total working hours, and the daily wage
             int totalWage = 0;
             int totalHoursWorked = 0;
 
@@ -52,9 +46,9 @@ namespace PracticeSheet
                     break;
             }
 
-            Console.WriteLine("\nCalculation for the month completed.");
+            Console.WriteLine($"\nCalculation for {companyName} completed.");
             Console.WriteLine($"Total working hours: {totalHoursWorked}");
-            Console.WriteLine($"Total wage for the month: ${totalWage}");
+            Console.WriteLine($"Total wage for {companyName} for the month: ${totalWage}");
         }
     }
 }
