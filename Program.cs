@@ -9,9 +9,8 @@ namespace PracticeSheet
             Console.WriteLine("Hello Suman! Welcome.");
             Console.WriteLine("Let's begin!");
 
-            PracticeClass practice = new PracticeClass();
-            practice.DoPractice();
-
+            EmployeeWageCalculator employeeWageCalculator = new EmployeeWageCalculator();
+            EmployeeWageCalculator.ComputeEmployeeWage();
             Console.ReadLine();
         }
     }
