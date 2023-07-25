@@ -2,7 +2,7 @@
 
 namespace PracticeSheet
 {
-    class EmpWageBuilder
+    class EmpWageBuilder : IEmployeeWageCalculator
     {
         private CompanyEmpWage[] companies;
         private int numOfCompanies;
@@ -38,4 +38,5 @@ namespace PracticeSheet
         }
     }
 }
+
 
