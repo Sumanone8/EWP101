@@ -20,9 +20,10 @@ namespace PracticeSheet
                     EmployeeWageCalculator1.ComputeEmployeeWage1();
                     break;
                 case 3:
-                    EmployeeWageCalculator2 employeeWageCalculator2 = new EmployeeWageCalculator2();
-                    EmployeeWageCalculator2.ComputeEmployeeWage2("Company A", 20, 100, 20); // Company A's parameters
-                    EmployeeWageCalculator2.ComputeEmployeeWage2("Company B", 22, 110, 25); // Company B's parameters
+                    EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+                    empWageBuilder.AddCompany("Company A", 20, 100, 20);
+                    empWageBuilder.AddCompany("Company B", 22, 110, 25);
+                    empWageBuilder.ComputeEmployeeWage();
                     break;
                 default:
                     Console.WriteLine("Please Enter a Valid Index No.");
